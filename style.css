@@ -1,1 +1,73 @@
-style.css
+body {
+  color: #897765;
+}
+
+header {
+  text-align: center;
+}
+
+/*Making vertical list horizontal*/
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+/*Making text in the center*/
+ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #F0F1F1;
+  padding: 15px;
+}
+
+a {
+  color: #897765;
+}
+
+section {
+  text-align: center;
+  background-color: #F0F1F1;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/*Making boxes inside centered*/
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/*Setting the width and aligning text inside*/
+
+#column1 {
+  width: 33%;
+  text-align: center;
+  background-color: #F0F1F1;
+  margin: 8px 5px 5px 0px;
+}
+
+#column3 {
+  width: 33%;
+  text-align: center;
+  background-color: #F0F1F1;
+  margin: 8px 0px 5px 0px;
+}
+
+#column2 {
+  width: 33%;
+  text-align: center;
+  background-color: #F0F1F1;
+  margin: 8px 5px 5px 0px;
+}
+
+footer {
+  text-align: center;
+  background-color: #F0F1F1;
+  padding: 15px;
+}
