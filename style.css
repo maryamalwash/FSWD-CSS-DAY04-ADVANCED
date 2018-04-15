@@ -1,20 +1,24 @@
 body {
-  color: #897765;
+  color: #3f3f3f;
 }
 
 header {
   text-align: center;
 }
 
-/*Making vertical list horizontal*/
+header img {
+  width: 175px;
+}
 
-li {
+/*Making vertical list in Navigation bar horizontal*/
+
+nav li {
   display: inline;
   padding: 10px;
 }
 
 /*Making text in the center*/
-ul {
+nav ul {
   text-align: center;
   margin: 0;
   padding: 0;
@@ -25,15 +29,20 @@ nav {
   padding: 15px;
 }
 
-a {
-  color: #897765;
+nav a {
+  color: #3f3f3f;
+  text-decoration: none;
 }
 
 section {
   text-align: center;
   background-color: #F0F1F1;
-  padding: 10px;
+  background-image: url(http://pluspng.com/img-png/iphone-hd-png-iphone-apple-png-file-550.png), url(https://cdn.macrumors.com/article-new/2017/02/applestoresaopaulo-800x530.jpg?retina);
+  background-repeat: no-repeat;
+  background-size: 400px, cover;
+  background-position: center;
   margin-top: 10px;
+  height: 500px;
 }
 
 /*Making boxes inside centered*/
@@ -50,6 +59,12 @@ section {
   text-align: center;
   background-color: #F0F1F1;
   margin: 8px 5px 5px 0px;
+  overflow: hidden;  /* Hiding leaking images outside of the div*/
+}
+
+
+#column1 img {
+  width: 550px;
 }
 
 #column3 {
@@ -59,15 +74,46 @@ section {
   margin: 8px 0px 5px 0px;
 }
 
+#column3 img {
+  width: 150px;
+  overflow: hidden;
+}
+
+#column3 a {
+  text-decoration: none;
+}
+
 #column2 {
   width: 33%;
-  text-align: center;
   background-color: #F0F1F1;
   margin: 8px 5px 5px 0px;
 }
 
+#column2 li {
+  list-style-type: none;  /* Removing bullet point from the list */
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#column2 li a {
+  text-decoration: none;
+  color: blue;
+}
+
+/*Aligning items inside the footer */
+
 footer {
-  text-align: center;
   background-color: #F0F1F1;
   padding: 15px;
+  display: flex;
+  justify-content: space-between;
 }
+
+#footer-flag img {
+  width: 30px;
+}
+
+#footer-middle-text a {
+  text-decoration: none;
+}
+
